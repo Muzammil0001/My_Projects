@@ -1,0 +1,117 @@
+@media (max-width:1170px){
+.section_subtitle{
+    max-width: 60%;
+    
+}
+.banner_sec .carousel-item{
+    
+    height: 90vh;
+}
+
+
+}
+
+@media (max-width:991px){
+   .about .banner_sec,
+.product .product_sec,
+.gallary .gallary_sec,
+.contact .contact_sec{
+   
+    padding-bottom: 30px;
+    padding-top: 125px;
+   
+} 
+.header .navbar{
+    background-size: cover;
+    padding: 20px;
+}
+.header .navbar-nav{
+    margin-top: 20px;
+
+}
+.header .navbar-nav .nav-link{
+    padding: 2px 5px;
+    margin-bottom: 10px;
+     
+}
+.header_right span{
+    padding: 2px 5px;
+
+}
+.banner_sec .carousel-caption{      
+    left: 3%;   
+}
+
+}
+
+@media (max-width:767px){
+    html,body{
+        font-size: 8px;
+
+    }
+    .section_subtitle{
+        max-width: 80%;
+    }
+
+    /* Banner Section */
+    .banner_sec{
+        min-height: 70vh;
+
+    }
+    .banner_sec .carousel-item{
+        height: 70vh;
+    }
+    .qoute_img{
+        width: 40px;
+        height: 40px;
+    }
+
+    .contact .contact_form .info_box li{
+        margin-bottom: 0px;
+        
+        }
+        .contact .contact_form .info_box li i{
+            font-size: 30px;  
+            
+        }
+        .contact .contact_form .info_box li p{
+            font-size: 14px;
+        }
+        .contact .contact_form .info_box li a{
+            font-size: 20px;
+        }
+}
+
+@media (max-width:590px){
+    html,body{
+        font-size: 7px;
+
+    }
+    .footer_sec .form_control{
+        width: 75%;
+    }
+    .qoute_img{
+        width: 30px;
+        height: 30px;
+    }
+    
+    .contact .contact_form .info_box li{
+        padding-left: 50px;
+    }
+        .contact .contact_form .info_box li i{
+            font-size: 25px;  
+            
+        }
+        .contact .contact_form .info_box li p{
+            font-size: 12px;
+        }
+        .contact .contact_form .info_box li a{
+            font-size: 18px;
+        }
+}
+
+@media (max-width:590px){
+    #exampleModal{
+        width: 95%;
+    }
+}

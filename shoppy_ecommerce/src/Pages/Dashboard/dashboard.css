@@ -1,0 +1,5 @@
+.sub_right_sidebar{
+    border-radius: 10px ;
+    min-height: 90vh;
+    max-height: fit-content;
+}

@@ -1,0 +1,104 @@
+header{
+    height: 100vh;
+    padding-top: 7rem;
+    overflow: none;
+    /* margin-bottom: 25rem; */
+
+}
+.header_container{
+    text-align: center;
+    height: 100%;
+    position: relative;
+   
+}
+
+/* ================CTA================ */
+.cta{
+
+    margin-top: 2.5rem;
+    display: flex;
+    gap: 1.2rem;
+    justify-content: center;
+}
+
+/* ==================Socials============= */
+
+.header_socials{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+    position: absolute;
+    left: 0;
+   bottom: 3rem;
+   
+
+}
+
+.header_socials::after{
+    content:"";
+    width: 1px;
+    height: 2rem;
+    background: #a6b3f7;
+}
+ .me{ 
+    background: #a6b3f7;
+    width: 22rem;
+    height: 20rem;
+    position: absolute;
+    left: 50%;
+      transform: translateX(-50%);
+    /* left:calc(50%-11rem); */
+    margin-top: 4rem;
+    background: linear-gradient(#a6b3f7, transparent);
+    border-radius: 12rem 12rem 0 0;
+    overflow: hidden;
+    padding: 5rem 1.5rem 1.5rem 1.5rem ;
+    
+ }
+.scroll_down
+{
+position: absolute;
+right: 2.5rem;
+bottom: 5rem;
+transform: rotate(90deg);
+font-size: 0.9rem;
+font-weight: 300px;
+}
+
+
+/* ===============For Medium Devices */
+
+@media (max-width: 991px){
+    header{
+        height:100vh;
+    }
+    .scroll_down{
+        right: -1rem;
+        }
+}
+@media (max-width: 767px){
+    header{
+        height:100vh;
+    }
+    .me{
+
+    }
+}
+/* ===============For SMALL Devices */
+@media (max-width: 577px){
+    .header_socials, .scroll_down{
+        display:none;
+    }
+    
+    header{
+        height:85vh;
+    }
+    .me{ 
+         width: 14rem;
+        height: 12rem;}
+   
+    
+}
+ 

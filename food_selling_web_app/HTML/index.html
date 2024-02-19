@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Bootstrap Link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awsome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <!-- main CSS Link -->
+    <link rel="stylesheet" href="/CSS/style.css">
+    <!-- Responsive CSS Link -->
+    <link rel="stylesheet" href="/CSS/responsive.css">
+    <!-- Light Box CSS   -->
+    <link rel="stylesheet" href="/CSS/lightbox.css">
+
+
+</head>
+
+<body>
+    <!-- NavBar start -->
+    <header id="full_nav">
+        <div class="header">
+            <div class="container">
+                <nav class="navbar  navbar-expand-lg ">
+
+                    <a class="navbar-brand" href="#">
+                        <img src="./images/logo1.png" class="logo_img" alt="logo">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fa fa-bars navbar-toggler-icon text-white"></i>
+
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav mx-auto">
+                            <li class="nav-item">
+                                <a class="nav-link active" id="active" aria-current="page" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="about us.html">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="product.html">Product</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " href="gallary.html">Gallary</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " href="contact us.html">Contact</a>
+                            </li>
+                        </ul>
+
+                        <div class="header_right">
+                            <div class="text-lg-end">
+                                <span>Call Us!</span>
+                                <span class="phone_no">+92 123312312</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </nav>
+            </div>
+        </div>
+    </header>
+    <!-- NavBar End -->
+
+
+    <!-- Banner Section start -->
+    <section class="banner_sec">
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="carousel-caption">
+                        <h1>100% Organic </h1>
+                        <h3>Fresh & Natural Farm Food</h3>
+                        <p>Some representative placeholder content for the first slide.</p>
+                        <a href="product.html" class="btn main_btn">All Products</a>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="carousel-caption">
+                        <h1>100% Organic </h1>
+                        <h3>Fresh & Natural Farm Food</h3>
+                        <p>Some representative placeholder content for the first slide.</p>
+                        <a href="product.html" class="btn main_btn">All Products</a>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+    </section>
+    <!-- Banner Section End -->
+    <!-- Login Modal Start  -->
+
+    <div id="signIn">
+    <div class id="exampleModal"  tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="container">
+                    <div class="d-flex justify-content-end align-items-center">
+                        <button type="button" onclick="closeFunc()" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div>
+                        <h4 class="modal-title text-center" id="exampleModalLabel">Sign In Your Account</h4>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="mb-3 inputs">
+                                <label for="input_label" class="col-form-label input_label">Email</label>
+                                <input type="text" placeholder="Email here" class="input_field">
+                            </div>
+                            <div class="mb-3 inputs">
+                                <label for="input-label" class="col-form-label input_label">Password</label>
+                                <input type="password" placeholder="Password here" class="input_field">
+
+                            </div>
+                        </form>
+
+                        <div class="d-flex align-items-center justify-content-between gap-4"> <button type="button"
+                                class="btn btn-primary Login_btn">Sign In</button>
+                            <div>
+                                <a href="" class="forgetLink" >Forget Password?</a>
+                                <a class="logLink" onclick="signUpFunc()">Sign Up</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+<div id="signUp">
+    <div class id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="container">
+                    <div class="d-flex justify-content-end align-items-center">
+                        <button type="button" onclick="closeFunc()" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div>
+                        <h4 class="modal-title text-center" id="exampleModalLabel">Sign Up Your Account</h4>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="mb-3 inputs">
+                                <label for="input_label" class="col-form-label input_label">Name</label>
+                                <input type="text" placeholder="Name here" class="input_field" required>
+                            </div>
+                            <div class="mb-3 inputs">
+                                <label for="input_label" class="col-form-label input_label">Email</label>
+                                <input type="email" placeholder="Email here" class="input_field" required>
+                            </div>
+                            
+                            <div class="mb-3 inputs">
+                                <label for="input-label" class="col-form-label input_label">Password</label>
+                                <input type="password" placeholder="Password here" class="input_field" required>
+
+                            </div>
+                            <div class="mb-3 inputs">
+                                <label for="input-label" class="col-form-label input_label">Confirm Password</label>
+                                <input type="password" placeholder="" class="input_field" required>
+
+                            </div>
+                        </form>
+
+                        <div class="d-flex align-items-center justify-content-between gap-4"> <button type="button"
+                                class="btn btn-primary Login_btn">Sign Up</button>
+                            <div>
+                                <a href="" class="forgetLink">Forget Password?</a>
+                                <a class="logLink" onclick="signInFunc()">Sign In</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+    <!-- Login Modal end  -->
+    <!-- Feature Section start -->
+    <section class="fearture_sec">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-12 col-sm-6  col-lg-3 mb-5">
+                    <div class="card card_feature_box">
+                        <div class="text-center">
+                            <div class="feature_icon_border">
+                                <div class="feature_icon">
+                                    <img src="./images/feature-icon/ui-chat.svg" alt="feature-icon">
+                                </div>
+                            </div>
+                            <div class="feature_text">
+                                <h3>24/7 Support</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class=" col-12 col-sm-6 col-lg-3 mb-5">
+                    <div class="card card_feature_box">
+                        <div class="text-center">
+                            <div class="feature_icon_border">
+                                <div class="feature_icon">
+                                    <img src="./images/feature-icon/truck-loaded.svg" alt="feature-icon">
+                                </div>
+                            </div>
+                            <div class="feature_text">
+                                <h3>Free Shipping</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6  col-lg-3 mb-5">
+                    <div class="card card_feature_box">
+                        <div class="text-center">
+                            <div class="feature_icon_border">
+                                <div class="feature_icon">
+                                    <img src="./images/feature-icon/wheat.svg" alt="feature-icon">
+                                </div>
+                            </div>
+                            <div class="feature_text">
+                                <h3>Fresh & Healthy</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-lg-3 mb-5">
+                    <div class="card card_feature_box">
+                        <div class="text-center">
+                            <div class="feature_icon_border">
+                                <div class="feature_icon">
+                                    <img src="./images/feature-icon/lemon.svg" alt="feature-icon">
+                                </div>
+                            </div>
+                            <div class="feature_text">
+                                <h3>From Our Farm</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Feature Section end -->
+
+    <!-- About Section Start -->
+    <section class="about_sec">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-xl-5 col-lg-6 col-sm-8">
+                    <div class="about_content">
+                        <h2>Lorem ipsum dolor sit.</h2>
+                        <div class="about_details">
+                            <p class="fw-bold">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, mollitia.
+                            </p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia libero nihil inventore
+                                sequi voluptate perferendis expedita laudantium, ullam cum veniam? Similique, laudantium
+                                aliquid consequuntur nostrum cupiditate reiciendis alias voluptatum dicta.</p>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos recusandae, totam officiis
+                                maxime cumque aperiam, ducimus veritatis debitis illum eaque obcaecati sit quasi hic
+                                culpa, facilis vero minus explicabo est?</p>
+                            <a href="about us.html" class="btn main_btn">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- About Section End -->
+    <!-- Product Section Start-->
+    <section class="product_sec">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 text-center pb-5">
+                    <h2 class="section_title">Our Best Seller Products</h2>
+                    <p class="section_subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius magni
+                        tempore fugiat, possimus accusamus aliquam facilis consequuntur itaque veritatis quos!</p>
+
+                </div>
+            </div>
+            <div class="row mx-0">
+
+
+                <div class="col-lg-3 col-sm-6 col-12 mb-5">
+                    <div class="card product_card">
+                        <div class="product_img">
+                            <img src="./images/products/product-3.jpg" class="img-fluid" alt="product-1">
+                        </div>
+                        <div class="d-flex align-items-center justify-content-between">
+                            <h3>Apple</h3>
+                            <span>$50 KG</span>
+                        </div>
+                        <div class="product_details">
+                            <a href="product.html" class="btn main_btn">View Products</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-sm-6 col-12 mb-5">
+                    <div class="card product_card">
+                        <div class="product_img">
+                            <img src="./images/products/product-4.jpg" class="img-fluid" alt="product-1">
+                        </div>
+                        <div class="d-flex align-items-center justify-content-between">
+                            <h3>Dragon</h3>
+                            <span>$50 KG</span>
+                        </div>
+                        <div class="product_details">
+                            <a href="product.html" class="btn main_btn">View Products</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-sm-6 col-12 mb-5">
+                    <div class="card product_card">
+                        <div class="product_img">
+                            <img src="./images/products/product-1.jpg" class="img-fluid" alt="product-1">
+                        </div>
+                        <div class="d-flex align-items-center justify-content-between">
+                            <h3>Musk Melon</h3>
+                            <span>$50 KG</span>
+                        </div>
+                        <div class="product_details">
+                            <a href="product.html" class="btn main_btn">View Products</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-sm-6 col-12 mb-5">
+                    <div class="card product_card">
+                        <div class="product_img">
+                            <img src="./images/products/product-2.jpg" class="img-fluid" alt="product-1">
+                        </div>
+                        <div class="d-flex align-items-center justify-content-between">
+                            <h3>Orange</h3>
+                            <span>$50 KG</span>
+                        </div>
+                        <div class="product_details">
+                            <a href="product.html" class="btn main_btn">View Products</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- Product Section End-->
+
+    <!-- Review Section Strat -->
+    <section class="review_sec">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 text-center pb-5">
+                    <h2 class="section_title">Our Happy Customers</h2>
+                    <p class="section_subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius magni
+                        tempore fugiat, possimus accusamus aliquam facilis consequuntur itaque veritatis quos!</p>
+
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-xl-8 col-sd-10">
+                    <div id="carouselExampleIndicators" class="carousel slide">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                                class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="d-sm-flex row">
+                                    <div class="col-sm-5 profile_box">
+                                        <img src="./images/testimonial/testimonial-1.png" class="img-fluid" alt="">
+                                    </div>
+                                    <div class="card col-sm-7">
+                                        <div class="description_box">
+                                            <p class="fst-italic">Lorem ipsum dolor sit amet consectetur adipisicing
+                                                elit. Temporibus a quidem ad.Lorem ipsum dolor sit amet consectetur
+                                                adipisicing elit. Temporibus a quidem ad. </p>
+                                            <div class="my-4">
+                                                <h4>John</h4>
+                                                <p class="m-0 text-white">
+                                                    Happy Customers
+                                                </p>
+                                                <img class="qoute_img" src="./images/testimonial/qoutes.svg"
+                                                    alt="qoutes_img">
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="carousel-item ">
+                                <div class="d-sm-flex row">
+                                    <div class="col-sm-5 profile_box">
+                                        <img src="./images/testimonial/testimonial-1.png" class="img-fluid" alt="">
+                                    </div>
+                                    <div class="card col-sm-7">
+                                        <div class="description_box">
+                                            <p class="fst-italic">Lorem ipsum dolor sit amet consectetur adipisicing
+                                                elit. Temporibus a quidem ad.Lorem ipsum dolor sit amet consectetur
+                                                adipisicing elit. Temporibus a quidem ad. </p>
+                                            <div class="my-4">
+                                                <h4>Leo</h4>
+                                                <p class="m-0 text-white">
+                                                    Happy Customers
+                                                </p>
+                                                <img class="qoute_img" src="./images/testimonial/qoutes.svg"
+                                                    alt="qoutes_img">
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="carousel-item ">
+                                <div class="d-sm-flex row">
+                                    <div class="col-sm-5 profile_box">
+                                        <img src="./images/testimonial/testimonial-1.png" class="img-fluid"
+                                            alt="testimonial.png">
+                                    </div>
+                                    <div class="card col-sm-7">
+                                        <div class="description_box">
+                                            <p class="fst-italic">Lorem ipsum dolor sit amet consectetur adipisicing
+                                                elit. Temporibus a quidem ad.Lorem ipsum dolor sit amet consectetur
+                                                adipisicing elit. Temporibus a quidem ad. </p>
+                                            <div class="my-4">
+                                                <h4>John</h4>
+                                                <p class="m-0 text-white">
+                                                    Happy Customers
+                                                </p>
+                                                <img class="qoute_img" src="./images/testimonial/qoutes.svg"
+                                                    alt="qoutes_img">
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+    </section>
+    <!-- Review Section End -->
+
+    <!-- Gallary Section start -->
+    <section class="gallary_sec">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center pb-5">
+                    <h2 class="section_title">Gallary</h2>
+                    <p class="section_subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius magni
+                        tempore fugiat, possimus accusamus aliquam facilis consequuntur itaque veritatis quos!</p>
+
+                </div>
+                <div class="col-sm-6 col-lg-4  mb-4">
+                    <a href="images/gallery/g-1.jpg" data-lightbox="image" data-title="lemon">
+                        <img src="images/gallery/g-1.jpg" alt="Gallary-img1" class="img-fluid rounded-3">
+                    </a>
+                </div>
+                <div class="col-sm-6 col-lg-4 col-12 mb-4">
+                    <a href="images/gallery/g-2.jpg" data-lightbox="image" data-title="lemon">
+                        <img src="images/gallery/g-2.jpg" alt="Gallary-img2" class="img-fluid rounded-3">
+                    </a>
+                </div>
+
+                <div class="col-sm-6 col-lg-4 col-12 mb-4">
+                    <a href="images/gallery/g-3.jpg" data-lightbox="image" data-title="lemon">
+                        <img src="images/gallery/g-3.jpg" alt="Gallary-img3" class="img-fluid rounded-3">
+                    </a>
+                </div>
+
+                <div class="col-sm-6 col-lg-4 col-12 mb-4">
+                    <a href="images/gallery/g-4.jpg" data-lightbox="image" data-title="lemon">
+                        <img src="images/gallery/g-4.jpg" alt="Gallary-img4" class="img-fluid rounded-3">
+                    </a>
+                </div>
+
+                <div class="col-sm-6 col-lg-4 col-12 mb-4">
+                    <a href="images/gallery/g-5.jpg" data-lightbox="image" data-title="lemon">
+                        <img src="images/gallery/g-5.jpg" alt="Gallary-img5" class="img-fluid rounded-3">
+                    </a>
+                </div>
+
+                <div class="col-sm-6 col-lg-4 col-12 mb-4">
+                    <a href="images/gallery/g-6.jpg" data-lightbox="image" data-title="lemon">
+                        <img src="images/gallery/g-6.jpg" alt="Gallary-img6" class="img-fluid rounded-3">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Gallary Section End -->
+
+    <!-- Footer Section start -->
+    <section class="footer_sec mt-3 mb-md-0">
+        <div class="container px-5 px-lg-0">
+            <div class="row">
+                <div class="col-lg-3 col-12 col col-sm-6 mb-5 mb-lg-0">
+                    <h5>Lorem Ipsum</h5>
+                    <p class="mb-4 ps-0 company_details">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat laborum quod, quaerat unde
+                        distinctio sint?
+                    </p>
+                    <div class="contact_info">
+                        <ul class="list-unstyled">
+                            <li><a href="#">
+                            <li class="fa fa-home me-3"></li>No.12 City Lahore, Pakistan</a></li>
+                            <li><a href="#">
+                            <li class="fa fa-phone me-3"></li>+92 61616161</a></li>
+                            <li><a href="#">
+                            <li class="fa fa-envelope me-3"></li>info@example.com</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-12 col-sm-6 mb-5 mb-lg-0">
+                    <h5>Customer Support</h5>
+
+                    <ul class=" link_widget p-0">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">Product Returns</a></li>
+                        <li><a href="#">Wholesale Policy</a></li>
+                    </ul>
+
+                </div>
+
+                <div class="col-lg-3 col-12 col-sm-6 mb-5 mb-lg-0">
+                    <h5>Quick Links</h5>
+
+                    <ul class="link_widget p-0">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">Product Returns</a></li>
+                        <li><a href="#">Wholesale Policy</a></li>
+                    </ul>
+
+                </div>
+
+
+
+                <div class="col-lg-3 col-12 col-sm-6 mb-5 mb-lg-0">
+                    <h5>News Letter</h5>
+                    <div class="form-group mb-4">
+                        <input type="email" class="form_control bg-transparent" placeholder="Enter your email here">
+                        <button type="submit" class="btn main_btn">Subscribe</button>
+                    </div>
+                    <h5>Stay Connected</h5>
+                    <ul class="social_network d-flex align-items-center p-0">
+                        <li><a href="#">
+                        <li class="fab fa-facebook-f"></li></a></li>
+                        <li><a href="#">
+                        <li class="fab fa-twitter"></li></a></li>
+                        <li><a href="#">
+                        <li class="fab fa-linkedin-in"></li></a></li>
+                        <li class="fab fa-youtube"></li></a></li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="copyright_sec container-fluid ">
+            <p>Copyright <a href="#"> &copy;CODEBYMUZAMMIL </a> All Rights Reserved</p>
+        </div>
+    </section>
+    <!-- Footer Section end -->
+
+
+
+
+    <!-- jquery-3 Link -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Bootstrap5 JS Link -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
+    <!-- Main JS link -->
+    <script src="/JS/main.js"></script>
+    <script src="/JS/lightbox.js"></script>
+</body>
+
+</html>
