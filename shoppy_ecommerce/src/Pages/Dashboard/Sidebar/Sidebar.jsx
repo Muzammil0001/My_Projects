@@ -11,7 +11,7 @@ const Sidebar = ({onMenuClick}) => {
             <div className='brand_img_sec'>
             <img src="assets/images//brand-logo.png" alt="brand_img" /></div>
         <ul>
-          <li>
+          <li onClick={()=>onMenuClick("dashboard")}>
             <i className='fas fa-home'></i> Dashboard
                   </li>
                   

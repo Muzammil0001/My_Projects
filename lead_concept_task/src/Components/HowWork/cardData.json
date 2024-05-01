@@ -1,0 +1,31 @@
+[
+{
+    "id":"01",
+    "image":"assets/images/camera 1.png",
+    "heading":"We Pick The Approach",
+    "discription":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since.",
+    "check1":"Corporate Shoots",
+    "check2":"Social Shoots",
+    "check3":"Tours Videos"
+},
+{
+    "id":"02",
+    "image":"assets/images/camera 2.png",
+    "heading":"Clients Specify Needs",
+    "discription":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since.",
+    "check1":"Corporate Shoots",
+    "check2":"Social Shoots",
+    "check3":"Tours Videos"
+},
+{
+    "id":"03",
+    "image":"assets/images/camera 3.png",
+    "heading":"We Deliver Data",
+    "discription":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since.",
+    "check1":"Corporate Shoots",
+    "check2":"Social Shoots",
+    "check3":"Tours Videos"
+
+}
+
+]

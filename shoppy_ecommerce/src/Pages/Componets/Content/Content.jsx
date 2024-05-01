@@ -7,8 +7,7 @@ import "./content.css";
 
 const Content = ({ loading, data }) => {
   const navigate = useNavigate();
-  const GetToken=localStorage.getItem("token")  //GET login user Token
-
+  const GetToken = localStorage.getItem("token"); //GET login user Token
 
   const [showLoginModal, setShowLoginModal] = useState(false); // State variable to control modal visibility
 
@@ -22,14 +21,12 @@ const Content = ({ loading, data }) => {
 
   // Function to toggle login modal visibility
   const toggleLoginModal = () => {
-    if(GetToken){
-      alert("Enjoy Shopping!")
-    }
-    else{
+    if (GetToken) {
+      alert("Enjoy Shopping!");
+    } else {
       setShowLoginModal(!showLoginModal);
     }
   };
-
 
   return (
     <>
@@ -54,8 +51,14 @@ const Content = ({ loading, data }) => {
           // Render actual product cards
           data.map((val, ind) => {
             return (
-              <Card key={ind} className="card col-xlg-3 col-lg-4 col-sm-6 col-12">
-                <div className="Card_img_container" onClick={() => cardEvent(ind)}>
+              <Card
+                key={ind}
+                className="card col-xlg-3 col-lg-4 col-sm-6 col-12"
+              >
+                <div
+                  className="Card_img_container"
+                  onClick={() => cardEvent(ind)}
+                >
                   <Card.Img
                     className="product_img"
                     variant="top"
@@ -64,19 +67,32 @@ const Content = ({ loading, data }) => {
                   />
                 </div>
                 <Card.Body className="card_body">
-                  <h5 className="product_title text-center" onClick={() => cardEvent(ind)}>
+                  <h5
+                    className="product_title text-center"
+                    onClick={() => cardEvent(ind)}
+                  >
                     {val.title.substring(0, 15)}...
                   </h5>
                   <p className="fw-bolder">${val.price}</p>
-                  <button className="btn btn-outline-dark" onClick={toggleLoginModal}>Buy Now</button> {/* Open modal on button click */}
+                  <button
+                    className="btn btn-outline-dark"
+                    onClick={toggleLoginModal}
+                  >
+                    Buy Now
+                  </button>{" "}
+                  {/* Open modal on button click */}
                 </Card.Body>
               </Card>
             );
+         
           })
         ) : null}
       </div>
       {/* Bootstrap Modal */}
-     <Login showLoginModal={showLoginModal} toggleLoginModal={toggleLoginModal} />
+      <Login
+        showLoginModal={showLoginModal}
+        toggleLoginModal={toggleLoginModal}
+      />
     </>
   );
 };

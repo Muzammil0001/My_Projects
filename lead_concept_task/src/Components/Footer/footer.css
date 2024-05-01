@@ -1,0 +1,98 @@
+/* Footer section CSS  */
+.footer_main {
+  margin-top: 150px;
+  height: 540px;
+  position: relative;
+  background: #f9fdff;
+  font-family: "Roboto", sans-serif;
+}
+
+.newsLetter_sec {
+  position: absolute;
+  top: 0; /* Set the inner div to the top of the outer div */
+  left: 0;
+  width: 100%; /* Ensure the inner div spans the entire width */
+  margin-top: -130px;
+  z-index: 1; /* Half of the inner div's height */
+}
+.footer_main .sub_main_footer {
+  padding-top: 140px;
+}
+.footer_main h6 {
+  font-family: "Roboto", sans-serif;
+  color: #306a82;
+  margin-bottom: 12.5px;
+  font-weight: 700;
+}
+
+.footer_main .company_details {
+  font-size: 14px;
+  text-align: justify;
+  padding-right: 20px;
+}
+
+.footer_main .su_footer_sec li {
+  list-style: none;
+  font-size: 14px;
+  font-weight: 400;
+}
+.footer_main .su_footer_sec .LinkIcon:hover,
+li:hover {
+  padding-left: 2px;
+  cursor: pointer;
+}
+.footer_main .su_footer_sec .link_widget {
+  margin-top: 30px;
+  height: 200px;
+  border-left: 1px solid #306a82;
+}
+
+.logo_img {
+  height: 50px;
+  width: 250px;
+}
+
+.footer_main .su_footer_sec .social_icon {
+  color: #fff;
+  background-color: #144356;
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+}
+.footer_main .su_footer_sec .social_icon:hover {
+  cursor: pointer;
+  background: #000;
+  color: #fff;
+}
+.footer_main .su_footer_sec .LinkIcon {
+  font-size: 14px;
+  color: #306a82;
+}
+
+@media (max-width: 1200px) {
+  .footer_main {
+    height: auto;
+  }
+  .su_footer_sec {
+    display: flex;
+    justify-content: center;
+  }
+}
+@media (max-width: 992px) {
+  .sub_main_footer{
+    padding-top: 200px !important;
+  }
+  .footer_main .su_footer_sec .link_widget {
+    margin-top: 10px;
+    height: auto;
+  }
+  .footer_main .company_details {
+    padding-right: 0px;
+  }
+}
+@media (max-width: 576px) {
+  .footer_main .su_footer_sec .link_widget {
+    border-left: 0px solid #306a82;
+    margin-top: 20px;
+  }
+}

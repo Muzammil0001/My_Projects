@@ -9,7 +9,8 @@ import Cart from './Pages/Componets/Navbar/Cart';
 import ProductDetail from "./Pages/Componets/Content/ProductDetail"
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Home from './Pages/Home/Home';
-import CreateProduct from './Pages/Dashboard/CreateProduct/CreateProduct';
+import CreateProduct from './Pages/Dashboard/Products/CreateProduct/CreateProduct';
+import UpdateProduct from './Pages/Dashboard/Products/UpdateProduct/UpdateProduct';
 
 
 const App = () => {
@@ -17,13 +18,14 @@ const App = () => {
     <BrowserRouter>
       <Routes>
        { 
-          // <Route path="/" element={<Home/>} />
+           <Route path="/" element={<Home/>} />
         }
-        <Route path="/" element={<Dashboard/>} />
+        <Route path="/dashboard" element={<Dashboard/>} />
            <Route path="/product/:id" element={<ProductDetail />} />
       
         <Route path='/cart' element={<Cart/>} />
         <Route path='/product/create' element={<CreateProduct/>} />
+        <Route path='/product/update/:id' element={<UpdateProduct/>} />
       </Routes>
     </BrowserRouter>
 

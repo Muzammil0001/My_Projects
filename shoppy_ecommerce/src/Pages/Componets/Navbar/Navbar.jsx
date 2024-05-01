@@ -1,13 +1,16 @@
 import React, { useEffect, useState } from 'react'
 import "./navbbar.css"
-import { Link, NavLink, useNavigate } from 'react-router-dom';
+import { Link, NavLink} from 'react-router-dom';
 import Login from '../Logs/Login';
+import Signup from '../Logs/Singup';
+
 
 const Navbar = () => {
   const GetToken=localStorage.getItem("token")
   
 const [cartItemCount, setCartItemCount]=useState(0); // control the Cart items coutn state
 const [showLoginModal, setShowLoginModal] = useState(false); // State variable to control modal visibility
+const [showSignupModal, setShowSignupModal] = useState(false); // State variable to control modal visibility
 
 
   useEffect(()=>{
@@ -21,6 +24,10 @@ const [showLoginModal, setShowLoginModal] = useState(false); // State variable t
   const toggleLoginModal = () => {
     setShowLoginModal(!showLoginModal);
   };
+
+  const toggleSignupModal=()=>{
+    setShowSignupModal(!showSignupModal)
+  }
 
   const LogoutHandle=()=>{
 if(GetToken){
@@ -76,7 +83,7 @@ useEffect(()=>{ const GetToken=localStorage.getItem("token")},[GetToken])
     }
 
     
-    <Link className='btn btn-outline-dark ms-2' to=''>
+    <Link className='btn btn-outline-dark ms-2' to='' onClick={toggleSignupModal}>
     <i className='fa fa-user-plus me-1'></i>
     Register</Link>
     <Link className='btn btn-outline-dark ms-2' to='/cart'>
@@ -101,7 +108,8 @@ useEffect(()=>{ const GetToken=localStorage.getItem("token")},[GetToken])
 </nav>
 
 <Login showLoginModal={showLoginModal} toggleLoginModal={toggleLoginModal} />
-
+<Signup showSignupModal={showSignupModal} toggleSignupModal={toggleSignupModal} />
+  
       </>
     );
  

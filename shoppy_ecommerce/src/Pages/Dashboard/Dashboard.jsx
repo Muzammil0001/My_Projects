@@ -2,20 +2,32 @@ import React,{useState} from "react";
 import "./dashboard.css";
 import Sidebar from "./Sidebar/Sidebar";
 import DashboardProducts from "./Products/DashboardProducts";
+import Dashboard_page from "./Dashboard_page/Dashboard_page";
 
 const Dashboard = () => {
     
     const [showProducts, setShowProducts] = useState(false);
-  const [showOtherComponent, setShowOtherComponent] = useState(false);
+  const [dashboard, setDashboard] = useState(true);
 
   const handleSidebarMenuClick = (component) => {
-    if (component === 'products') {
-      setShowProducts(true);
-      setShowOtherComponent(false);
-    } else if (component === 'other') {
-      setShowOtherComponent(true);
-      setShowProducts(false);
+    switch(component)
+    {
+      case "dashboard":{
+        setDashboard(true);
+        setShowProducts(false);
+        break;
+        }
+      case "products":{
+        setShowProducts(true);
+        setDashboard(false);
+        break;
+      }
+      default:{
+        setDashboard(true);
+        setShowProducts(false);
+      }
     }
+   
   };
   
 
@@ -27,6 +39,7 @@ const Dashboard = () => {
         </div>
         <div className="right_sidebar col-lg-10 col-12">
           <div className="sub_right_sidebar m-5 p-3 border-black border-2 ">
+             {dashboard && <Dashboard_page/>}
             {showProducts && <DashboardProducts />}
             
           </div>

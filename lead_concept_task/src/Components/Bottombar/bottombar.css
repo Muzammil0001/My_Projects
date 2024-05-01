@@ -1,0 +1,34 @@
+.bottombar_main {
+  margin: 0;
+  padding: 0;
+  height: 55px;
+  width: 100%;
+  background: #144356;
+}
+
+.bottombar_main .sub-bottombar p {
+  font-family: "Inter", sans-serif;
+  color: #fff;
+  padding: 0;
+  margin: 0;
+}
+
+@media (max-width: 992px) {
+  .bottombar_main .sub-bottombar p {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 767px) {
+  .bottombar_main .sub-bottombar p {
+    font-size: 13px;
+    text-align: center;
+    height: auto;
+  }
+}
+
+@media (max-width: 576px) {
+  .bottombar_main .sub-bottombar p {
+    font-size: 12px;
+  }
+}

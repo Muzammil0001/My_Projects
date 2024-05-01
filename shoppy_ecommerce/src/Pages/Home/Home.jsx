@@ -1,15 +1,13 @@
 import React,{ useEffect, useState } from 'react'
 import "./home.css"
 import Navbar from '../Componets/Navbar/Navbar' 
-import Banner from './../Componets/Banner/Banner';
-import { Link, useNavigate } from 'react-router-dom';
+import Banner from './Banner/Banner';
+import { Link } from 'react-router-dom';
 import Content from '../Componets/Content/Content';
 import axios from "axios";
 import Footer from '../Componets/Footer/Footer';
-import Login from '../Componets/Logs/Login';
 
 const Home = () => {
-  const navigate=useNavigate()
   const [data, setData] = useState([]);
   const [filterData, setFilterData]=useState([])
   const [loading, setLoading] = useState(true);

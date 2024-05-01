@@ -1,0 +1,136 @@
+.main_about_sec
+{
+  margin-top: 50px !important;
+  width: 100%;
+  margin: 20px 0 ;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+
+.main_about_sec .left_sec .img_frame {
+  border: 25px solid #306a82;
+  width: 350px;
+  height: 550px;
+  padding: 0;
+}
+.main_about_sec img {
+  margin-left: 15%;
+  position: absolute;
+  height: 400px;
+  width: 400px;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+
+.main_about_sec .right_sec p{
+  text-align: justify;
+  height: auto;
+  font-size: 18px;
+}
+.main_about_sec .side_line1 {
+  height: 20px;
+  width: 8px;
+  background: #306a82;
+}
+.main_about_sec .side_line2 {
+  height: 20px;
+  width: 8px;
+  background: #3caae0;
+}
+
+ .main_about_sec .right_sec h3 {
+  line-height: 30px;
+  font-size: 28px;
+  color: #3caae0;
+  font-family: "Roboto", sans-serif;
+}
+.main_about_sec .right_sec h1 {
+  font-size: 42px;
+  font-family: "Abril Fatface", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+
+@media (max-width:1296px){
+  .main_about_sec .left_sec .img_frame {
+    
+    width: 290px;
+    height: 500px;
+  }
+  .main_about_sec img {
+
+    height: 350px;
+    width: 350px;
+    border-radius: 20px;
+    object-fit: cover;
+  }
+}
+@media (max-width:1200px){
+  .main_about_sec .left_sec .img_frame {
+  display: none;
+  }
+  .main_about_sec img {
+    border: 10px solid transparent;
+    outline: 10px solid #306a82;
+    position: static;
+    height: 350px;
+    width: 350px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 20px;
+  }
+  .main_about_sec .right_sec {
+   padding-top: 10px;
+  }
+}
+
+@media (max-width:1200px){
+ 
+  .main_about_sec img {
+   
+    height: 280px;
+    width: 280px;
+    
+  }
+  
+}
+
+@media (max-width:768px){
+ 
+  .main_about_sec .side_line1 {
+    height: 15px;
+    width: 6px;
+   
+  }
+  .main_about_sec .side_line2 {
+    height: 15px;
+    width: 6px;
+    
+  }
+  
+   .main_about_sec .right_sec h3 {
+    
+    font-size: 22px;
+  }
+  .main_about_sec .right_sec h1 {
+    font-size: 30px;
+  }
+  .main_about_sec .right_sec  p {
+    font-size: 16px;
+  }
+  
+  
+}
+
+@media (max-width:576px){
+
+  .main_about_sec .right_sec h1 {
+    font-size: 25px;
+  }
+}
+
+

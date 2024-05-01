@@ -62,10 +62,10 @@ const toggleSignupModal = () => {
 {/* Sign-in form */}
 <form onSubmit={formSubmitHandle}>
 <div className="mb-3 input_sec">
-<input type="text" autoComplete='off'name="username" onChange={onChangeHandle} value={inputVal.username} className="form_control" id="emailSignIn" placeholder="Enter email" />
+<input type="text" autoComplete='off'name="username" onChange={onChangeHandle} value={inputVal.username} className="signin_form_control" id="emailSignIn" placeholder="Enter email" />
 </div>
 <div className="mb-3 input_sec">
-<input type="password" name="password" value={inputVal.password} onChange={onChangeHandle} className="form_control" id="passwordSignIn" placeholder="Enter password" />
+<input type="password" name="password" value={inputVal.password} onChange={onChangeHandle} className="signin_form_control" id="passwordSignIn" placeholder="Enter password" />
 </div>
 <Link to=""><p className='ForgetPassword'>Forget Password?</p></Link>
 {/* Sign-up form */}

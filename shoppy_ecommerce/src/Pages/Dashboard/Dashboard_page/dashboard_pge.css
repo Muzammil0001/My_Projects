@@ -1,0 +1,57 @@
+.dashboard_page {
+    /* background: #000; */
+    padding: 10px;
+}
+.dashboard_page .d_cards .d_card{
+    height: 200px;
+    width:300px;
+    background-color: #29252e;
+    color: #fff;
+    border-radius: 3px;
+    box-shadow: 0px 1px 5px rgba(0,0,0,0.4);
+}
+.dashboard_page .d_cards .d_card i{
+    color:black;
+}
+.dashboard_page .d_cards .d_card:hover{
+    background:#f0f0f1;
+    margin-top: -2px;
+    color:#29252e;
+    transition: 0.5s ease-in-out;
+    
+}
+
+
+.dashboard_page .d_card_icon{
+    background: #fff;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+.dashboard_page .d_card_icon i{
+    font-size: 30px;
+    padding: 5px;
+}
+
+.dashboard_page .d_progress_sec{
+    height: auto;
+    background:#fff;
+    box-shadow: 0px 1px 5px rgba(0,0,0,0.4);
+}
+.dashboard_page .d_progress_img1{
+    height: 300px;
+}
+.dashboard_page .d_progress_img1 img{
+    height: 300px;
+    width: 400px;
+}
+.dashboard_page .fa-signal,.fa-line-chart{
+    font-size: 250px;
+}
+.dashboard_page .d_progress_sec:hover{
+margin-top: -3px;
+transition: all 0.2s ease;
+}

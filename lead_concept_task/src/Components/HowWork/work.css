@@ -1,0 +1,127 @@
+.work_main {
+  margin-top: 50px !important;
+  width: 100vw !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  
+}
+.cards {
+  width: 100%;
+}
+.work_main .first_heading .side_line1 {
+  height: 20px;
+  width: 8px;
+  background: #306a82;
+}
+.work_main .first_heading .side_line2 {
+  height: 20px;
+  width: 8px;
+  background: #3caae0;
+}
+.work_main .sub_work_main .first_heading h3 {
+  line-height: 30px;
+  font-size: 28px;
+  color: #3caae0;
+  font-family: "Roboto", sans-serif;
+}
+.work_main .sub_work_main .second_heading h2 {
+  padding: 10px 0;
+  font-size: 42px;
+  font-family: "Abril Fatface", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.work_main .sub_work_main .cards .card {
+  height: 350px;
+  width: 340px;
+  border-radius: 30px;
+}
+
+.work_main .sub_work_main .cards .card .card_icon {
+  margin: 20px 0;
+  height: 50px;
+  width: 50px;
+}
+.work_main .sub_work_main .cards .card h4 {
+  font-family: "roboto", sans-serif;
+  color: #306a82;
+}
+.work_main .sub_work_main .cards .card p {
+  font-family: "roboto", sans-serif;
+  text-align: justify;
+  padding: 0 10px;
+}
+.work_main .sub_work_main .cards .card span {
+  color: #306a82;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+}
+.work_main .sub_work_main .cards .card h1 {
+  color: #d8e8f1;
+  text-shadow: -1px -1px 0 #306a82, 1px -1px 0 #306a82, -1px 1px 0 #306a82,
+    1px 1px 0 #306a82;
+  font-size: 90px;
+  font-family: "Abril Fatface", serif;
+}
+
+@media (max-width: 1296px) {
+  .work_main .sub_work_main .cards .card {
+    height: 300px;
+    width: 290px;
+    border-radius: 30px;
+  }
+  .work_main .sub_work_main .cards .card h1 {
+    font-size: 60px;
+    margin-top: -10px;
+    margin-left: -15%;
+  }
+  .card {
+    padding-bottom: 10px;
+    height: auto !important;
+  }
+  .cards {
+    height: auto;
+    padding: 20px;
+  }
+}
+@media (max-width: 992px) {
+  .work_main .sub_work_main .cards .card {
+    height: 350px;
+    width: 500px;
+    border-radius: 30px;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .work_main .sub_work_main .side_line1 {
+    height: 15px;
+    width: 6px;
+   
+  }
+  .work_main .sub_work_main .side_line2 {
+    height: 15px;
+    width: 6px;
+    
+  }
+  
+   .first_heading h3 {
+  
+    font-size: 22px !important;
+    padding-bottom: 0 !important;
+  }
+  .second_heading h2 {
+    font-size: 30px !important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+  }
+}
+@media (max-width: 576px) {
+  .work_main .sub_work_main .cards .card {
+    height: 350px;
+    width: 300px;
+    border-radius: 30px;
+  }
+ 
+  
+}

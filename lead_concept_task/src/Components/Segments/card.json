@@ -1,0 +1,53 @@
+[
+{
+    "id":"1",
+    "image":"assets/images/card_img_1.png",
+    "title": "Entertainment"
+},
+{
+    "id":"2",
+    "image":"assets/images/card_img_2.png",
+    "title": "Landscape"
+},
+{
+    "id":"3",
+    "image":"assets/images/card_img_3.png",
+    "title": "Suports"
+},
+{
+    "id":"4",
+    "image":"assets/images/card_img_4.png",
+    "title": "Road Trip"
+},
+{
+    "id":"5",
+    "image":"assets/images/card_img_5.png",
+    "title": "Natural"
+},
+{
+    "id":"6",
+    "image":"assets/images/card_img_1.png",
+    "title": "Entertainment"
+},
+{
+    "id":"7",
+    "image":"assets/images/card_img_2.png",
+    "title": "Landscape"
+},
+{
+    "id":"8",
+    "image":"assets/images/card_img_3.png",
+    "title": "Suports"
+},
+{
+    "id":"9",
+    "image":"assets/images/card_img_4.png",
+    "title": "Road Trip"
+},
+{
+    "id":"10",
+    "image":"assets/images/card_img_5.png",
+    "title": "Natural"
+}
+
+]

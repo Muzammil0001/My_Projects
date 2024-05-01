@@ -1,0 +1,131 @@
+.header_main {
+  padding: 0 !important;
+  box-sizing: border-box;
+  margin: 20px 0 0 0;
+}
+
+.video-container {
+  position: relative;
+  width: 100%;
+  height: 75vh !important;
+  overflow: hidden;
+}
+video {
+  position: absolute;
+  object-fit: cover;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0.8) 50%,
+    transparent 50%
+  );
+}
+.over {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+.content-sec {
+  margin-left: 4%;
+  width: 40%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.other-sec {
+  width: 60%;
+  display: flex;
+  align-items: center;
+}
+.heading-1 {
+  font-size: 40px;
+  font-family: "Abril Fatface", serif !important;
+  font-weight: 400;
+  font-style: normal;
+}
+.heading-2 {
+  color: rgb(27, 135, 193);
+  font-size: 38px;
+  font-family: "Abril Fatface", serif;
+  font-style: normal;
+}
+.play-btn {
+  margin-left: 75px;
+  font-size: 27px;
+  height: 80px;
+  width: 80px;
+  padding: 10px !important;
+  background-color: rgb(5, 122, 239);
+  border: 14px solid rgba(48, 55, 54, 0.6);
+  border-radius: 50%;
+  color: rgb(255, 255, 255);
+  outline: 14px solid rgba(105, 105, 105, 0.4) !important;
+}
+.play-btn:hover {
+  cursor: pointer;
+}
+@media (max-width: 992px) {
+  .content-sec {
+    width: 40%;
+  }
+  .other-sec {
+    width: 60%;
+  }
+  .heading-1 {
+    font-size: 35px;
+  }
+  .heading-2 {
+    font-size: 30px;
+  }
+  .overlay {
+    background: linear-gradient(
+      110deg,
+      rgba(255, 255, 255, 0.8) 50%,
+      transparent 50%
+    );
+  }
+  .play-btn {
+    margin-left: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .overlay {
+    background: linear-gradient(
+      120deg,
+      rgba(255, 255, 255, 0.8) 100%,
+      transparent 0%
+    );
+  }
+  @media (max-width: 576px) {
+  }
+  .over {
+    flex-direction: column;
+  }
+  .content-sec {
+    width: 96%;
+    margin: auto;
+  }
+  .other-sec {
+    display: none;
+  }
+  .heading-1 {
+    font-size: 30px;
+  }
+  .heading-2 {
+    font-size: 25px;
+  }
+}

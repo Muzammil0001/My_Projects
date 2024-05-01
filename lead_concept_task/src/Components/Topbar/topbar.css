@@ -1,0 +1,53 @@
+.topbar_main {
+  margin: 0;
+  padding: 0;
+  height: 55px;
+  width: 100%;
+  background: #144356;
+}
+.topbar_main .sub-topbar .left_contact {
+  color: #fff;
+  font-size: 18px;
+}
+.topbar_main .sub-topbar span {
+  font-family: "Roboto", sans-serif;
+}
+
+.topbar_main .sub-topbar .right_contact .social_icon {
+  color: #fff;
+  background-color: #306a82;
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+}
+.topbar_main .sub-topbar .right_contact .social_icon:hover{
+  background-color: #fff;
+  color: #306a82;
+}
+
+/* Responsive CSS */
+
+@media (max-width: 767px) {
+  .topbar_main {
+    height: 50px;
+  }
+
+  .topbar_main .sub-topbar .left_contact {
+    font-size: 16px;
+  }
+  .topbar_main .sub-topbar .right_contact .social_icon {
+    height: 30px;
+    width: 30px;
+  }
+}
+
+@media (max-width: 576px) {
+  .topbar_main .sub-topbar .left_contact {
+    font-size: 14px;
+    margin-right: 2px;
+  }
+  .topbar_main .sub-topbar .right_contact .social_icon {
+    height: 25px;
+    width: 25px;
+  }
+}

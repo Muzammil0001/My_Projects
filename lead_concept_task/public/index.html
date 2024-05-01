@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+     <link rel="stylesheet" href="./owl.carousel.css">
+     <link rel="stylesheet" href="./owl.theme.green.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-PeuHmKGNfM62GynlxZs+YjwBfzGszcPsPqGkylV8kvF8AufoVO7VXcPTkL2+xWDLQ4NoHObNz7IPJWVwQw3W2Q==" crossorigin="anonymous" />
+    <link
+    href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+  />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+ 
+    <title>Lead Concept</title>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./jquery.min.js"></script>
+    <script src="./owl.carousel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        let video = $("#bannerVideo");
+        let playBtn = $("#playBtn");
+        playBtn.on("click", function () {
+          if (video[0].paused) {
+            video[0].play();
+            playBtn.html('<i class="fa-solid fa-pause"></i>');
+          } else {
+            video[0].pause();
+            playBtn.html('<i class="fa-solid fa-play"></i>');
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

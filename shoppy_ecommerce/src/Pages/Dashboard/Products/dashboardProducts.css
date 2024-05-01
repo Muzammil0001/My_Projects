@@ -40,10 +40,12 @@
 }
 .add_product_sec{
     margin: 10px 60px;
+  
 }
 .control_icon_plus{
-    border: 1px solid;
+    border: 1px solid rgb(188, 188, 188);
    border-radius: 50%;
+   box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.4);
 }
 .control_icon_plus:hover{
    background-color: #1f1f20;
